@@ -9,7 +9,7 @@
 header,
 footer {
 	height: 50vh;
-	background: #000;
+	background: rgba(0, 0, 0, 0.419);
 }
 
 main {
@@ -22,10 +22,30 @@ main {
 }
 
 .card {
+	position: relative;
 	background-color: #f6fafe;
 	padding: 10px;
 	width: 33.3333%;
 	align-self: stretch;
+	border-radius: 8px;
+	box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.011);
+}
+
+.card span {
+	position: absolute;
+	top: -12px;
+	right: 70px;
+	background-color: rgba(241, 69, 69, 0.732);
+	color: #fff;
+	border-radius: 4px;
+	padding: 5px 8px;
+}
+
+.card .plan-name {
+	text-align: center;
+	text-transform: uppercase;
+	color: #8c4bff;
+	margin: 15px 0;
 }
 
 .card .price {
@@ -41,6 +61,20 @@ main {
 	text-align: center;
 }
 
+.plan-pricing p {
+	font-size: 13px;
+}
+.plan-pricing h5 {
+	text-transform: uppercase;
+	color: #344b80;
+}
+.plan-pricing p:last-of-type {
+	height: 20px;
+	color: #8c4bff;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
 .plan-pricing .buy-now {
 	text-decoration: none;
 	text-align: center;
@@ -48,6 +82,21 @@ main {
 	background-color: #8c4bff;
 	color: #fff;
 	padding: 10px 40px;
-	margin: 20px 0;
+	margin: 20px 0 10px 0;
 	border-radius: 8px;
 }
+.features {
+	padding-left: 20px;
+}
+.features .plan-name {
+	text-align: left;
+}
+
+/* @media (max-width: 1200px) {
+	main {
+		flex-direction: column;
+	.card {
+		width: 100%;
+		align-self: auto;
+	}
+} */
